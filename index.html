@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Harp Sim</title>
+    <link rel="stylesheet" href="lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    
+<!-- TITLE -->
+    <section class="container header">
+        <h1 class="text-center">Harp Pedal Simulator</h1>
+        <h2 class="text-center">Experience the exciting life of harp pedals!</h2>
+    </section>
+
+
+    <div class="container-fluid">
+
+        <div class="row d-flex justify-content-around">
+            <div class="col-3 col-lg-1 accidentalDisplay">
+                <div class="row enharmonicDisplay"></div>
+                <div class="row accDisplay d-flex justify-content-center">&#9837</div>
+                <div class="row accDisplay d-flex justify-content-center">&#9838</div>
+                <div class="row accDisplay d-flex justify-content-center">&#9839</div>
+                <div class="row noteDisplay"></div>
+            </div>
+            <div class="col-3 col-lg-1">
+                <div class="row enharmonicDisplay" id="dDisplay">D &#9837 / C &#9839</div>
+                <div class="row pedalBar selected" id="dFlat"><p></p></div>
+                <div class="row pedalBar" id="dNat"></div>
+                <div class="row pedalBar" id="dSharp"></div>
+                <div class="row noteDisplay justify-content-center">D</div>
+            </div>
+            <div class="col-3 col-lg-1">
+                <div class="row enharmonicDisplay" id="cDisplay">C &#9837 / B</div>
+                <div class="row pedalBar selected" id="cFlat"></div>
+                <div class="row pedalBar" id="cNat"></div>
+                <div class="row pedalBar" id="cSharp"></div>
+                <div class="row noteDisplay justify-content-center">C</div>
+            </div>
+            <div class="col-3 col-lg-1">
+                <div class="row enharmonicDisplay" id="bDisplay">B &#9837 / A &#9839</div>
+                <div class="row pedalBar selected" id="bFlat"></div>
+                <div class="row pedalBar" id="bNat"></div>
+                <div class="row pedalBar" id="bSharp"></div>
+                <div class="row noteDisplay justify-content-center">B</div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-3 col-lg-1">
+                <div class="row enharmonicDisplay" id="eDisplay">E &#9837 / D &#9839</div>
+                <div class="row pedalBar selected" id="eFlat"></div>
+                <div class="row pedalBar" id="eNat"></div>
+                <div class="row pedalBar" id="eSharp"></div>
+                <div class="row noteDisplay justify-content-center">E</div>
+            </div>
+            <div class="col-3 col-lg-1">
+                <div class="row enharmonicDisplay" id="fDisplay">F &#9837 / E</div>
+                <div class="row pedalBar selected" id="fFlat"></div>
+                <div class="row pedalBar" id="fNat"></div>
+                <div class="row pedalBar" id="fSharp"></div>
+                <div class="row noteDisplay justify-content-center">F</div>
+            </div>
+            <div class="col-3 col-lg-1">
+                <div class="row enharmonicDisplay" id="gDisplay">G &#9837 / F &#9839</div>
+                <div class="row pedalBar selected" id="gFlat"></div>
+                <div class="row pedalBar" id="gNat"></div>
+                <div class="row pedalBar" id="gSharp"></div>
+                <div class="row noteDisplay justify-content-center">G</div>
+            </div>
+            <div class="col-3 col-lg-1">
+                <div class="row enharmonicDisplay" id="aDisplay">A &#9837 / G &#9839</div>
+                <div class="row pedalBar selected" id="aFlat"></div>
+                <div class="row pedalBar" id="aNat"></div>
+                <div class="row pedalBar" id="aSharp"></div>
+                <div class="row noteDisplay justify-content-center">A</div>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center keySigInput">
+            <select name="key" id="keySig">
+                <option value="cbMaj">C-flat Major / A-flat Minor</option>
+                <option value="cMaj">C Major / A Minor</option>
+                <option value="c#Maj">C-sharp Major / A-sharp Minor</option>
+                <option value="dbMaj">D-flat Major / B-flat Minor</option>
+                <option value="dMaj">D Major / B Minor</option>
+                <option value="ebMaj">E-flat Major / C Minor</option>
+                <option value="eMaj">E Major / C-sharp Minor</option>
+                <option value="fMaj">F Major / D minor</option>
+                <option value="f#Maj">F-sharp Major / D-sharp Minor</option>
+                <option value="gbMaj">G-flat Major / E-flat Minor</option>
+                <option value="gMaj">G Major / E Minor</option>
+                <option value="abMaj">A-flat Major / F Minor</option>
+                <option value="aMaj">A Major / F-sharp Minor</option>
+                <option value="bbMaj">B-flat Major / G Minor</option>
+                <option value="bMaj">B Major / G-sharp Minor</option>
+            </select>
+            <button class="center-block" id="submitKey">Apply Key</button>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

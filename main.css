@@ -1,0 +1,63 @@
+body {
+    /* background: #e5e8ed;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #e5e8ed, #7db1ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #e5e8ed, #7db1ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Raleway;
+
+}
+
+.header {
+    font-weight: 0;
+    font-size: 2em;
+    margin: 10px;
+}
+
+.header h2 {
+    font-size: .8em;
+}
+
+.container-fluid {
+    border: 40px solid rgb(0, 0, 0, 0);
+    padding: 1em;
+}
+
+.pedalBar {
+    height: 95px;
+    width: 95px;
+    margin: 5px 0;
+    border: 2px solid rgba(73, 73, 73, 0.5);
+    border-radius: 10%;
+    transition: all .2s ease-in-out;
+}
+
+.pedalBar:hover {
+    filter: brightness(85%);
+    transition: all .2s ease-in-out;
+}
+
+.selected {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    background: #e899e5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #e6cbe5, #d862d4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #e6cbe5, #d862d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.enharmonicDisplay {
+    height: 50px;
+    width: 95px;
+}
+
+.accDisplay {
+    height: 95px;
+    width: 95px;
+    font-size: 5em;
+    align-items: center;
+}
+
+.noteDisplay {
+    height: 95px;
+    width: 95px;
+    font-size: 3em;
+    align-items: center
+}
